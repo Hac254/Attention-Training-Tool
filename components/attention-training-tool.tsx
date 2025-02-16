@@ -11,12 +11,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Play, Pause, SkipForward, Volume2, Maximize2, Minimize2, HelpCircle, BarChart2 } from 'lucide-react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
+/*
+https://i.ibb.co/LdGX0Y5d/city.jpg
+https://i.ibb.co/dwrTVFFB/forest.jpg
+https://i.ibb.co/7N2MhTQn/ocean.jpg
+https://i.ibb.co/xq9LHv3h/quiet-room.jpg
+https://i.ibb.co/m5HjvdFg/rainforest.jpg
+*/
 const soundscapes = [
-  { name: 'Forest Sounds', file: '/audio/forest.mp3', image: '/images/forest.jpg?height=300&width=400', color: 'from-green-200 to-green-400' },
-{ name: 'Ocean Waves', file: '/audio/ocean.mp3', image: '/images/ocean.jpeg?height=300&width=400', color: 'from-blue-200 to-blue-400' },
-{ name: 'City Noise', file: '/audio/city.mp3', image: '/images/city.jpeg?height=300&width=400', color: 'from-gray-200 to-gray-400' },
-{ name: 'Quiet Room', file: '/audio/quiet-room.mp3', image: '/images/quiet-room.jpeg?height=300&width=400', color: 'from-purple-200 to-purple-400' },
-{ name: 'Rainforest', file: '/audio/rainforest.mp3', image: '/images/rainforest.jpeg?height=300&width=400', color: 'from-emerald-200 to-emerald-400' },
+  { name: 'Forest Sounds', file: '/audio/forest.mp3', image: 'https://i.ibb.co/dwrTVFFB/forest.jpg?height=300&width=400', color: 'from-green-200 to-green-400' },
+{ name: 'Ocean Waves', file: '/audio/ocean.mp3', image: 'https://i.ibb.co/7N2MhTQn/ocean.jpg?height=300&width=400', color: 'from-blue-200 to-blue-400' },
+{ name: 'City Noise', file: '/audio/city.mp3', image: 'https://i.ibb.co/LdGX0Y5d/city.jpg?height=300&width=400', color: 'from-gray-200 to-gray-400' },
+{ name: 'Quiet Room', file: '/audio/quiet-room.mp3', image: 'https://i.ibb.co/xq9LHv3h/quiet-room.jpg?height=300&width=400', color: 'from-purple-200 to-purple-400' },
+{ name: 'Rainforest', file: '/audio/rainforest.mp3', image: 'https://i.ibb.co/m5HjvdFg/rainforest.jpg?height=300&width=400', color: 'from-emerald-200 to-emerald-400' },
 ]
 
 const ambientSounds = [
