@@ -12,11 +12,11 @@ import { Play, Pause, SkipForward, Volume2, Maximize2, Minimize2, HelpCircle, Ba
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
 const soundscapes = [
-    { name: 'Forest Sounds', file: '/audio/forest.mp3', image: '/images/forest.jpg?height=300&width=400', color: 'from-green-200 to-green-400' },
-  { name: 'Ocean Waves', file: '/audio/ocean.mp3', image: '/images/ocean.jpeg?height=300&width=400', color: 'from-blue-200 to-blue-400' },
-  { name: 'City Noise', file: '/audio/city.mp3', image: '/images/city.jpeg?height=300&width=400', color: 'from-gray-200 to-gray-400' },
-  { name: 'Quiet Room', file: '/audio/quiet-room.mp3', image: '/images/quiet-room.jpeg?height=300&width=400', color: 'from-purple-200 to-purple-400' },
-  { name: 'Rainforest', file: '/audio/rainforest.mp3', image: '/images/rainforest.jpeg?height=300&width=400', color: 'from-emerald-200 to-emerald-400' },
+  { name: 'Forest Sounds', file: '/audio/forest.mp3', image: '/images/forest.jpg?height=300&width=400', color: 'from-green-200 to-green-400' },
+{ name: 'Ocean Waves', file: '/audio/ocean.mp3', image: '/images/ocean.jpeg?height=300&width=400', color: 'from-blue-200 to-blue-400' },
+{ name: 'City Noise', file: '/audio/city.mp3', image: '/images/city.jpeg?height=300&width=400', color: 'from-gray-200 to-gray-400' },
+{ name: 'Quiet Room', file: '/audio/quiet-room.mp3', image: '/images/quiet-room.jpeg?height=300&width=400', color: 'from-purple-200 to-purple-400' },
+{ name: 'Rainforest', file: '/audio/rainforest.mp3', image: '/images/rainforest.jpeg?height=300&width=400', color: 'from-emerald-200 to-emerald-400' },
 ]
 
 const ambientSounds = [
@@ -186,14 +186,13 @@ const AttentionTrainingTool = () => {
 
   if (showSplash) {
     return (
-      <motion.div 
-        className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-400 to-pink-600 text-white p-4" 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
+      <div className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-800 p-4">
+        {/* Remove the following block entirely */}
+        {/* <div className="max-w-md w-full mb-8">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Attention%20Training%20Tool-Mock%20up-bIQ5xEUl4DsTdVjCsXDThQ1eE8VMTd.svg" alt="Attention Training Tool" className="w-full h-auto" />
+        </div> */}
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold mb-8 text-center"
+          className="text-4xl md:text-6xl font-bold mb-8 text-center text-gray-800"
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 120 }}
@@ -201,7 +200,7 @@ const AttentionTrainingTool = () => {
           MindfulFocus
         </motion.h1>
         <motion.p 
-          className="text-xl mb-12 text-center max-w-md"
+          className="text-xl mb-12 text-center max-w-md text-gray-600"
           initial={{ y: 50 }}
           animate={{ y: 0 }}
           transition={{ delay: 0.7, type: "spring", stiffness: 120 }}
@@ -219,15 +218,19 @@ const AttentionTrainingTool = () => {
         >
           Begin Your Journey
         </motion.button>
-      </motion.div>
+      </div>
     )
   }
 
   if (showTutorial) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-400 to-pink-600 p-4">
+      <div className="min-h-screen flex items-center justify-center bg-white p-4">
         <Card className="w-full max-w-md">
           <CardHeader>
+            {/* Remove the following block entirely */}
+            {/* <div className="w-full mb-4">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Attention%20Training%20Tool-Mock%20up-bIQ5xEUl4DsTdVjCsXDThQ1eE8VMTd.svg" alt="Attention Training Tool" className="w-full h-auto" />
+            </div> */}
             <CardTitle>{tutorialSteps[tutorialStep].title}</CardTitle>
           </CardHeader>
           <CardContent>
